@@ -1,17 +1,15 @@
-s file controls the AWS CodeBuild
+
 
 version: 0.2
 phases:
           pre_build:
                       commands:
                                   
-                                      build:
-                                                  commands:
-                                                              - echo "Entered build phase"
-                                                                                                                                            post_build:
-                                                                                    commands:
-                                                                                                - echo "Entered the post-build phase"
+                                build:
+                                          commands:
+                                              - echo "Entered build phase"
+                                        post_build:
+                                           commands:
+                                              - echo "Entered the post-build phase"
                                                                                                       
-                                                                                    artifacts:
-                                                                                              files:
-                                                                                                      - deploy/**/*
+                                      
